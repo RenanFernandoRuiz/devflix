@@ -9,7 +9,7 @@
     animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-.movieModal{
+.movieModal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,14 +24,14 @@
     animation: fadeIn 0.3s ease-in-out forwards;
 }
 
-.movieInfo{
+.movieInfo {
     width: 100%;
     border-radius: inherit;
     background: #000;
     position: relative;
 }
 
-.movieInfo img{
+.movieInfo img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
@@ -41,7 +41,7 @@
     object-position: top;
 }
 
-.btnClose{
+.btnClose {
     position: absolute;
     top: 0;
     right: 0;
@@ -54,27 +54,27 @@
     cursor: pointer;
 }
 
-.movieType{
+.movieType {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 30%;
     background: linear-gradient(#ffffff00, #000);
-    
+
 }
 
-.movieType div:nth-of-type(1){
+.movieType div:nth-of-type(1) {
     position: absolute;
     top: 2em;
     left: 2em;
-    color:#fff;
+    color: #fff;
     text-transform: uppercase;
 }
 
-.movieType div:nth-of-type(1) img{
-width: 5%;
-height: 5%;
-border-radius: 0;
+.movieType div:nth-of-type(1) img {
+    width: 5%;
+    height: 5%;
+    border-radius: 0;
 }
 
 .movieType a {
@@ -97,15 +97,34 @@ border-radius: 0;
 
 }
 
-.desc{
+.desc {
     padding: 0 2em 2em;
     text-align: justify;
 }
 
+@media screen and (max-width: 768px) {
+    .movieModal {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .movieModal {
+        width: 320px;
+        margin-top: 2em;
+    }
+
+
+    .desc {
+        padding-bottom: 3.5em;
+    }
+}
+
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
