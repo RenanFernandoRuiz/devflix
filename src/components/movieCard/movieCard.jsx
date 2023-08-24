@@ -4,9 +4,9 @@ import styles from "./movieCard.module.css";
 
 const MovieCard = ({ movies }) => {
     const movie = movies;
-    const [isModalOpen,  setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const toggleModal= () => {
+    const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
     }
     return (
@@ -23,7 +23,7 @@ const MovieCard = ({ movies }) => {
                     <h3>{movie.Title}</h3>
                 </div>
             </div>
-           {isModalOpen &&  <MovieDesc movies={movie}  click={toggleModal} />}
+            {isModalOpen && <MovieDesc movies={movie} click={toggleModal} />}
         </>
     );
 };

@@ -6,6 +6,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 999;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieModal{
@@ -20,6 +21,7 @@
     z-index: 1000;
     color: #fff;
     max-height: 100vh;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieInfo{
@@ -30,6 +32,8 @@
 }
 
 .movieInfo img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     position: relative;
     width: 100%;
     height: 480px;
@@ -71,4 +75,38 @@
 width: 5%;
 height: 5%;
 border-radius: 0;
+}
+
+.movieType a {
+    margin-top: 1em;
+    padding: 0.2em 0.7em;
+    background: #fff;
+    border-radius: 0.4em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.containerMisc {
+    font-size: 14pt;
+    display: flex;
+    padding: 2em 2em 1em;
+}
+
+.containerFlex {
+    flex: 1;
+
+}
+
+.desc{
+    padding: 0 2em 2em;
+    text-align: justify;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
