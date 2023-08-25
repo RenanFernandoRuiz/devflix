@@ -106,13 +106,34 @@
     .movieModal {
         width: 550px;
     }
+
+    .containerMisc{
+        padding-top: 1;
+    }
+
 }
 
+/*coisas para celular */
 @media screen and (max-width: 430px) {
     .movieModal {
         width: 320px;
         margin-top: 2em;
     }
+
+    .movieType h1{
+        font-size: 15pt;
+    }
+
+    .movieInfo img {
+        height: 220px;
+    }
+
+
+    .containerMisc{
+        padding-top: 6em;
+        display: block;
+    }
+
 
 
     .desc {

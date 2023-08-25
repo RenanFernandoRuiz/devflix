@@ -3,7 +3,7 @@ import styles from "./movieDescription.module.css";
 import devFlix from "/favicon.png";
 
 const MovieDesc = ({ movies, click }) => {
-    const apiKey = "e4d577fa";
+    const apiKey = "5ce4c101";
     const apiUrl = `https://omdbapi.com/?apikey=${apiKey}&i=${movies.imdbID}`;
     const [movieDesc, setMovieDesc] = useState([]);
 
@@ -36,7 +36,7 @@ const MovieDesc = ({ movies, click }) => {
                 </div>
                 <div className={styles.containerMisc}>
                     <div className={styles.containerFlex}>
-                        {movie.imdbRating} | duração:{movie.Runtime} | {" "} 
+                        {movie.imdbRating} | duração:{movie.Runtime} | {" "}
                         {movie.Year}
                     </div>
                     <div className={styles.containerFlex}>
@@ -45,7 +45,7 @@ const MovieDesc = ({ movies, click }) => {
                     </div>
                 </div>
                 <div className={styles.desc}>
-                <p>Sinopse: {movie.Plot}</p>
+                    <p>Sinopse: {movie.Plot}</p>
                 </div>
             </div>
         </div>
